@@ -1,3 +1,3 @@
 git clone https://github.com/sevii-ia/Wordpress.git
 
-sudo sh wordpress.sh
+sudo sh Wordpress/wordpress.sh
