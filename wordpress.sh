@@ -17,6 +17,7 @@ MYSQL_SCRIPT
 cd /tmp/ && wget https://wordpress.org/latest.zip
 unzip latest.zip -d /var/www/html
 chown -R www-data:www-data /var/www/html/wordpress/
+sudo rm /var/www/html/wordpress/wp-config-sample.php
 mv /home/ubuntu/Wordpress/wp-config.php /var/www/html/wordpress/wp-config.php
 
 mv /home/ubuntu/Wordpress/wordpress.conf /etc/nginx/conf.d/wordpress.conf
