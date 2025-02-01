@@ -1,6 +1,7 @@
 sudo apt update -y
 sudo apt install -y nginx
 sudo systemctl start nginx && systemctl enable nginx
+sudo apt install -y unzip
 sudo apt install -y php php-cli php-common php-imap php-fpm php-snmp php-xml php-zip php-mbstring php-curl php-mysqli php-gd php-intl
 sudo apt install -y mariadb-server
 sudo systemctl start mariadb && sudo systemctl enable mariadb
