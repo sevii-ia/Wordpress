@@ -22,6 +22,7 @@ mv /home/ubuntu/Wordpress/wp-config.php /var/www/html/wordpress/wp-config.php
 
 mv /home/ubuntu/Wordpress/wordpress.conf /etc/nginx/conf.d/wordpress.conf
 
-read -p "Enter the domain or IP-address of your server: " SERVER_NAME
+PUBLIC_IP=$(curl -s ifconfig.me)
+sudo sed -i "s/server_name .*/server_name $PUBLIC_IP;/" "/etc/nginx/conf.d/wordpress.conf"
 
 sudo systemctl restart nginx
