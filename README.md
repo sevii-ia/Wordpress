@@ -51,6 +51,29 @@ Wordpress/
 
 ---
 
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/sevii-ia/Wordpress.git
+cd Wordpress
+````
+
+Run the project:
+
+```bash
+wordpress.sh
+```
+
+Open in browser:
+
+```txt
+http://localhost
+```
+
+---
+
 ## 🎯 Purpose
 
 The main purpose of this repository is:
