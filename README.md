@@ -40,13 +40,12 @@ This repository is intended for learning and experimentation rather than product
 
 ```txt
 Wordpress/
-├── wp-content/
-├── themes/
-├── plugins/
-├── uploads/
-├── configs/
-├── docker/
-└── README.md
+├── LICENSE
+├── README.md
+├── wordpress.conf
+├── wordpress.sh
+├── wordpress2.sh
+└── wp-config.php
 ````
 
 ---
