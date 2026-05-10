@@ -112,8 +112,6 @@ This repository is intended for educational use. Do not use hardcoded database p
 
 ## License
 
-This project is licensed under the MIT License. [LICENSE](LICENSE)
+This project is licensed under the MIT License.
 
-Copyright (c) 2026 Vsevolod Zyabkin
-
-::contentReference[oaicite:0]{index=0}
+See the [LICENSE](LICENSE) file for more information.
