@@ -36,20 +36,6 @@ This repository is intended for learning and experimentation rather than product
 
 ---
 
-## 📁 Project Structure
-
-```txt
-Wordpress/
-├── LICENSE
-├── README.md
-├── wordpress.conf
-├── wordpress.sh
-├── wordpress2.sh
-└── wp-config.php
-````
-
----
-
 ## 🚀 Getting Started
 
 Clone the repository:
