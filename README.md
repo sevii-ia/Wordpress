@@ -116,6 +116,4 @@ This project is licensed under the MIT License. [LICENSE](LICENSE)
 
 Copyright (c) 2026 Vsevolod Zyabkin
 
-```
 ::contentReference[oaicite:0]{index=0}
-```
