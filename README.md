@@ -1,91 +1,121 @@
-# WordPress
+# WordPress Configuration
 
-Educational repository dedicated to learning and practicing WordPress development, customization, and content management system configuration.
+Educational repository for installing and configuring WordPress on a Linux server using Nginx, PHP, and MySQL/MariaDB.
 
-This repository contains study materials, experiments, configuration examples, and practice tasks related to WordPress and web development.
+## Features
 
----
+- Automated WordPress installation scripts
+- Nginx server configuration
+- PHP-FPM setup
+- MySQL/MariaDB database setup
+- Example `wp-config.php`
+- Local/server WordPress deployment practice
 
-## 📚 About
-
-The project was created for educational purposes and includes:
-
-- WordPress installation practice
-- Theme customization
-- Plugin experiments
-- CMS configuration examples
-- PHP and MySQL practice
-- Website structure learning
-- Local development environment setup
-
-This repository is intended for learning and experimentation rather than production use.
-
----
-
-## 🛠️ Technologies & Tools
+## Technologies
 
 - WordPress
 - PHP
-- MySQL
-- HTML5
-- CSS3
-- JavaScript
-- Apache / Nginx
-- Docker
+- Nginx
+- MySQL / MariaDB
+- Shell Script
 - Linux
 
----
+## Repository Structure
 
-## 🚀 Getting Started
+```text
+.
+├── wordpress.sh      # Basic automated WordPress setup script
+├── wordpress2.sh     # Interactive WordPress setup script
+├── wordpress.conf    # Nginx configuration for WordPress
+├── wp-config.php     # WordPress configuration file
+├── LICENSE
+└── README.md
+````
+
+## Installation
 
 Clone the repository:
 
 ```bash
 git clone https://github.com/sevii-ia/Wordpress.git
 cd Wordpress
-````
+```
 
-Run the project:
+Make the script executable:
 
 ```bash
-wordpress.sh
+chmod +x wordpress.sh
 ```
 
-Open in browser:
+Run the installer:
 
-```txt
-http://localhost
+```bash
+sudo ./wordpress.sh
 ```
 
----
+Or use the interactive installer:
 
-## 🎯 Purpose
+```bash
+chmod +x wordpress2.sh
+sudo ./wordpress2.sh
+```
 
-The main purpose of this repository is:
+## Usage
 
-* Learning WordPress development
-* Practicing CMS customization
-* Understanding website structure
-* Improving PHP and backend skills
-* Experimenting with plugins and themes
-* Learning deployment and configuration basics
+After installation, open your server IP address or configured domain in a browser:
 
----
+```text
+http://your-server-ip
+```
 
-## 🧪 Topics Covered
+Complete the WordPress setup from the browser.
 
-* WordPress setup
-* Theme development
-* Plugin management
-* Database configuration
-* Local server setup
-* Content management
-* Website customization
+## Configuration
 
----
+The Nginx configuration is stored in:
 
-## 📄 License
+```text
+wordpress.conf
+```
 
-This project is licensed under the MIT License.
+The WordPress database settings are stored in:
 
-See the [LICENSE](LICENSE) file for more information.
+```text
+wp-config.php
+```
+
+For security, replace default database credentials and generate unique WordPress authentication keys before production use.
+
+## Troubleshooting
+
+Test Nginx configuration:
+
+```bash
+sudo nginx -t
+```
+
+Restart Nginx:
+
+```bash
+sudo systemctl restart nginx
+```
+
+Check Nginx logs:
+
+```bash
+sudo tail -f /var/log/nginx/wordpress_error.log
+```
+
+## Security Notice
+
+This repository is intended for educational use. Do not use hardcoded database passwords or default WordPress salts in production.
+
+## License
+
+This project is licensed under the MIT License. [LICENSE](LICENSE)
+
+Copyright (c) 2026 Vsevolod Zyabkin
+
+```
+::contentReference[oaicite:0]{index=0}
+```
